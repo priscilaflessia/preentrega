@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+$colorbody: rgb(247, 222, 226);
+$colorTitulos: black;
+$sizeTitulos: 80px;
+$parrafo: dark;
+$base-color: rgb(241, 86, 241);
+$bg: white;
+$colores: rgb(184, 4, 184),
+rgb(252, 93, 252),
+rgb(255, 132, 255),
+rgb(255, 184, 255);
+
+
+@import "menu";
+@import "multimedia";
+@import "footer";
+@import "tablas";
+
+
+
+
+.container {
+    margin: 40px;
+
+    h2 {
+        color: $colorTitulos;
+        font-size: $sizeTitulos;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    p {
+        @if $parrafo==clasic {
+            color: black;
+            background-color: $bg;
+        }
+
+        @else if $parrafo==dark {
+            color: white;
+            background-color: black;
+        }
+    }
+
+    p {
+        line-height: 3.0;
+        letter-spacing: 3px;
+        font-size: 20px;
+        padding: 15px;
+        border: 5px solid bisque;
+        margin: 5%;
+        height: auto;
+    }
+}
+
+@mixin titulos {
+    color: rgb(252, 192, 203);
+    line-height: 1, 5;
+    font-size: 35px;
+    font-style: oblique;
+    background-color: $bg;
+    font-family: unset;
+    margin: 20px;
+
+}
+
+
+
+
+h3 {
+    @include titulos()
+}
+
+h4 {
+    @include titulos()
+}
+
+.bodyIndex {
+    background-color: $colorbody;
+
+    .titulo {
+        height: 130px;
+        background-color: $bg;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .titulo__h1 {
+        color: $colorTitulos;
+        margin-left: 200px;
+        padding-top: 120px;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 3px white;
+    }
+
+    .titulo__h1--size {
+        font-size: 100px;
+
+    }
+
+
+
+    .sec {
+        margin: 50px;
+    }
+
+    h5 {
+        font-size: 60px;
+    }
+
+    h6 {
+        font-size: 40px;
+    }
+
+
+
+    @mixin parrafos {
+        background-color: white;
+        color: black;
+        line-height: 3.0;
+        letter-spacing: 3px;
+        font-size: 20px;
+        padding: 15px;
+        border: 5px solid bisque;
+        margin: 5%;
+        height: auto;
+    }
+
+    p {
+        @include parrafos()
+    }
+
+    .loNuevo__h3--bg {
+        @include titulos()
+    }
+
+    .videoIndex {
+        background-color: white;
+        background-size: cover;
+        margin: 0 auto;
+        padding-top: 40px;
+        width: 330px;
+        position: center;
+        padding: 15px;
+        border: 5px solid bisque;
+    }
+
+    .videoIndex:hover {
+        transition: 5s;
+    }
+
+    .videoIndex:hover {
+        height: 240px;
+        width: 420px;
+    }
+
+    .parrafo {
+        @include parrafos()
+    }
+
+    .parrafo__p--bg {
+        background-color: $bg;
+    }
+
+    @for $in from 1 through 4 {
+        .for-#{$in} {
+            height: 50px;
+            font-size: 30px;
+            margin: 10px;
+            padding: 5px;
+            border: 3px solid bisque;
+            background-color: $bg;
+            display: flex;
+            display: inline;
+        }
+
+        @for $in from 1 through 4 {
+            .for-#{$in} {
+                background-color: lighten($base-color, $in *10%);
+            }
+        }
+    }
+
+}
+
+.bodyIndumentaria {
+    background-color: $colorbody;
+    h2 {
+        color: $colorTitulos;
+        font-size: 90px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+.bodyAcc {
+    background-color: $colorbody;
+    h2 {
+        color: $colorTitulos;
+        font-size: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+.bodyCalzado {
+    background-color: $colorbody;
+    h2 {
+        color: $colorTitulos;
+        font-size: 90px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+
+    .titulo__h1--size {
+        font-size: 30px;
+    }
+
+    h2 {
+        color: $colorTitulos;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h3,
+    h4 {
+        font-size: 15px;
+    }
+
+    .footer a {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+    .titulo__h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        color: $colorTitulos;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h3,
+    h4 {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+}
+
+nav {
+  background-color: white;
+  color: pink;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-weight: 80%;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #fcc0cb;
+  font-size: 25px;
+  text-decoration: none;
+}
+nav ul li {
+  margin-left: 50px;
+  position: relative;
+  display: inline block;
+}
+nav form input {
+  margin-left: 300px;
+}
+nav a:hover {
+  color: black;
+  border: solid 5px pink;
+}
+nav .form.inline {
+  margin-left: 40px;
+}
+
+.multimedia {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img1 {
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+  padding: 15px;
+  border: 5px solid bisque;
+  margin: 5%;
+}
+
+.img1:hover {
+  transform: scale(1.2, 1.2);
+  transition: 2s;
+}
+
+.footer__li-- {
+  list-style: none;
+  display: inline-block;
+  margin: 6%;
+}
+
+.footer__a--estilo {
+  list-style: none;
+  color: pink;
+  font-size: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100%;
+}
+.footer__a--estilo a:hover {
+  color: black;
+  border: solid 5px pink;
+}
+
+.container {
+  margin: 40px;
+}
+.container h2 {
+  color: black;
+  font-size: 120px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container p {
+  color: white;
+  background-color: black;
+}
+.container p {
+  line-height: 3;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding: 15px;
+  border: 5px solid bisque;
+  margin: 5%;
+  height: auto;
+}
+
+h3 {
+  color: #fcc0cb;
+  line-height: 1, 5;
+  font-size: 35px;
+  font-style: oblique;
+  background-color: white;
+  font-family: unset;
+  margin: 20px;
+}
+
+h4 {
+  color: #fcc0cb;
+  line-height: 1, 5;
+  font-size: 35px;
+  font-style: oblique;
+  background-color: white;
+  font-family: unset;
+  margin: 20px;
+}
+
+.bodyIndex {
+  background-color: #f7dee2;
+}
+.bodyIndex .titulo {
+  height: 100vh;
+  background-image: url("verano1.png");
+  background-size: cover;
+  background-position: center;
+}
+.bodyIndex .titulo__h1 {
+  color: black;
+  margin-left: 200px;
+  padding-top: 120px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px white;
+}
+.bodyIndex .titulo__h1--size {
+  font-size: 100px;
+}
+.bodyIndex .sec {
+  margin: 50px;
+}
+.bodyIndex h5 {
+  font-size: 60px;
+}
+.bodyIndex h6 {
+  font-size: 40px;
+}
+.bodyIndex .bienvenidos__h3--bg {
+  background-color: #cff6fd;
+  margin: 20px 330px;
+  border: 3px solid bisque;
+}
+.bodyIndex .bienvenidos__h3--bg span {
+  color: #dabbf7;
+}
+.bodyIndex p {
+  background-color: white;
+  color: black;
+  line-height: 3;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding: 15px;
+  border: 5px solid bisque;
+  margin: 5%;
+  height: auto;
+}
+.bodyIndex .loNuevo__h3--bg {
+  color: #fcc0cb;
+  line-height: 1, 5;
+  font-size: 35px;
+  font-style: oblique;
+  background-color: white;
+  font-family: unset;
+  margin: 20px;
+}
+.bodyIndex .videoIndex {
+  background-color: white;
+  background-size: cover;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 330px;
+  position: center;
+  padding: 15px;
+  border: 5px solid bisque;
+}
+.bodyIndex .videoIndex:hover {
+  transition: 5s;
+}
+.bodyIndex .videoIndex:hover {
+  height: 240px;
+  width: 420px;
+}
+.bodyIndex .parrafo {
+  color: black;
+  line-height: 3;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding: 15px;
+  border: 5px solid bisque;
+  margin: 5%;
+  height: auto;
+}
+.bodyIndex .parrafo__p--bg {
+  background-color: white;
+}
+
+.bodyIndumentaria {
+  background-color: #f7dee2;
+}
+
+.bodyAcc {
+  background-color: #f7dee2;
+}
+
+.bodyCalzado {
+  background-color: #f7dee2;
+}
+
+/*# sourceMappingURL=estilo.css.map */

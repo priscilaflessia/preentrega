@@ -36,6 +36,8 @@ rgb(255, 184, 255);
     }
 
     p {
+        background-color: white;
+        color: black;
         line-height: 3.0;
         letter-spacing: 3px;
         font-size: 20px;
@@ -185,21 +187,7 @@ h4 {
         font-size: 90px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    @mixin parrafos {
-        background-color: white;
-        color: black;
-        line-height: 3.0;
-        letter-spacing: 3px;
-        font-size: 20px;
-        padding: 15px;
-        border: 5px solid bisque;
-        margin: 5%;
-        height: auto;
-    }
 
-    p {
-        @include parrafos()
-}
 
 .bodyAcc {
     background-color: $colorbody;
@@ -208,20 +196,7 @@ h4 {
         font-size: 100px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    @mixin parrafos {
-        background-color: white;
-        color: black;
-        line-height: 3.0;
-        letter-spacing: 3px;
-        font-size: 20px;
-        padding: 15px;
-        border: 5px solid bisque;
-        margin: 5%;
-        height: auto;
-    }
-
-    p {
-        @include parrafos()
+    
 }
 
 .bodyCalzado {
@@ -231,21 +206,8 @@ h4 {
         font-size: 90px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    @mixin parrafos {
-        background-color: white;
-        color: black;
-        line-height: 3.0;
-        letter-spacing: 3px;
-        font-size: 20px;
-        padding: 15px;
-        border: 5px solid bisque;
-        margin: 5%;
-        height: auto;
     }
-
-    p {
-        @include parrafos()
-}
+    
 
 
 @media only screen and (max-width: 360px) {
